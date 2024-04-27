@@ -1,3 +1,5 @@
+import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Message from "./message";
@@ -7,6 +9,7 @@ import Aside from "./aside";
 import Footer from "./footer";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 const root = createRoot(document.getElementById("root"));
 root.render(

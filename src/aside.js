@@ -1,3 +1,9 @@
+const feather = require('feather-icons');
+import './style.css'; 
+setTimeout(() =>{
+  feather.replace();
+}, 1000);
+
 const Aside = () => {
     return <aside>
         <label for="exampleDropdownFormEmail1" class="form-label">Correo Electronico</label>
@@ -16,6 +22,15 @@ Remember me
 <div class="dropdown-divider"></div>
 <a class="dropdown-item" href="#">New around here? Sign up</a>
 <a class="dropdown-item" href="#">Forgot password?</a>
+
+<div className="icons-right">
+    <i data-feather="bell"></i>
+    <i data-feather="navigation"></i>
+    <i data-feather="paperclip"></i>
+    <i data-feather="trash-2"></i>
+    <i data-feather="info"></i>
+</div>
+
     </aside>;
 }
 

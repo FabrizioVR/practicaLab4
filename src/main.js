@@ -1,4 +1,9 @@
-import { Carousel } from "react-responsive-carousel";
+import { Carousel } from 'react-responsive-carousel';
+const feather = require('feather-icons');
+
+setTimeout(() =>{
+  feather.replace();
+}, 1000);
 
 const Main = () => {
     return <main>
@@ -22,12 +27,20 @@ const Main = () => {
           {<img src="https://m.media-amazon.com/images/I/711fwUVvb3L.jpg" alt="Pepinillo Rick6"/>}
         </div>
         </Carousel>
-
         <h1>
             ¡¡¡Pepinillo Rick!!!
         </h1>
         <p>
             ¡Lleva a casa la locura de Rick y Morty con nuestros peluches de Pepinillo Rick! Suaves, adorables y llenos de personalidad, estos peluches son el regalo perfecto para cualquier fan. ¡Hazte con el tuyo y lleva un trozo del universo de Rick y Morty a casa hoy mismo!
+        </p>
+        <p>
+          Imagenes e informacion mas detalladas  <i data-feather="eye"></i>
+        </p>
+        <p>
+          Te gustan las imagenes?  <i data-feather="heart"></i>
+        </p>
+        <p>
+          Contacta con nostros <i data-feather="message-circle"></i>
         </p>
         <br></br>
         <table>
