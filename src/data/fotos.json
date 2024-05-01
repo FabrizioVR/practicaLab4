@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Foto 1",
+        "slug": "img-1",
+        "description": "¡Rick!",
+        "picture": "https://i.etsystatic.com/24163036/r/il/ac5a89/4668936625/il_570xN.4668936625_skua.jpg"
+    },
+    {
+        "name": "Foto 2",
+        "slug": "img-2",
+        "description": "La recompensa es gigante",
+        "picture": "https://m.media-amazon.com/images/I/613wIz9vlHL.jpg"
+    },
+    {
+        "name": "Foto 3",
+        "slug": "img-3",
+        "description": "Solo impresionate, es un pepinillo",
+        "picture": "https://i.etsystatic.com/24163036/r/il/efa407/4620693818/il_570xN.4620693818_i9du.jpg"
+    },
+    {
+        "name": "Foto 4",
+        "slug": "img-4",
+        "description": "Pepinillo Rick siendo Rick",
+        "picture": "https://m.media-amazon.com/images/I/711fwUVvb3L.jpg"
+    }
+]

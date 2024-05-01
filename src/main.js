@@ -1,32 +1,39 @@
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-bootstrap/Carousel';
 const feather = require('feather-icons');
+import { useNavigate } from "react-router-dom";
+import Fotos from './data/fotos.json'
 
 setTimeout(() =>{
   feather.replace();
 }, 1000);
 
 const Main = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = (slug) => {
+      navigate("/detalle/" + slug);
+  }
+  
     return <main>
         <Carousel>
-        <div>
-          <img src="https://i.etsystatic.com/24163036/r/il/ac5a89/4668936625/il_570xN.4668936625_skua.jpg" alt="Pepinillo Rick1"/>
-        </div>
-        <div>
-          {<img src="https://m.media-amazon.com/images/I/613wIz9vlHL.jpg" alt="Pepinillo Rick2"/>}
-        </div>
-        <div>
-          {<img src="https://http2.mlstatic.com/D_NQ_NP_656692-CBT75637665809_042024-O.webp" alt="Pepinillo Rick3"/>}
-        </div>
-        <div>
-          {<img src="https://m.media-amazon.com/images/I/61t2-U6cAWL.jpg" alt="Pepinillo Rick4"/>}
-        </div>
-        <div>
-          {<img src="https://i.etsystatic.com/24163036/r/il/efa407/4620693818/il_570xN.4620693818_i9du.jpg" alt="Pepinillo Rick5"/>}
-        </div>
-        <div>
-          {<img src="https://m.media-amazon.com/images/I/711fwUVvb3L.jpg" alt="Pepinillo Rick6"/>}
-        </div>
+            {
+                Fotos.map(it => {
+                    return (<Carousel.Item onClick={(e) => {
+                        e.preventDefault(); handleClick(it.slug)
+                    }}>
+                        <img className='w-100 dark-image' src={it.picture}></img>
+                        <Carousel.Caption>
+                            <h3>{it.name}</h3>
+                            <p>{it.description}</p>
+                            <button className="btn btn-primary" >Ver detalle</button>
+                        </Carousel.Caption>
+                    </Carousel.Item>);
+                })
+            }
         </Carousel>
+
+        
         <h1>
             ¡¡¡Pepinillo Rick!!!
         </h1>
