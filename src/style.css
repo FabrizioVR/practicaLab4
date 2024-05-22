@@ -2,6 +2,13 @@
     text-align: right;
 }
 
-.color-header {
-    background-color: antiquewhite;
-  }
+header {
+    background-color: #6b8898;
+    text-align: center;
+}
+
+footer {
+    background-color:#96897B;
+    text-align: center;
+    padding: 20px;
+}
